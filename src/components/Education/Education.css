@@ -4,7 +4,7 @@
     
   }
 
-  .edu-container::after,
+  /* .edu-container::after,
 .edu-container::before{
     content: " ";
     width: 25.125rem;
@@ -24,7 +24,7 @@
 .edu-container::before{
     bottom: 2rem;
     right: 0rem;
-}
+} */
 
   .timeline-box{
     position:relative;
@@ -36,6 +36,12 @@
     padding: 1rem;
     border-radius: 10%;
     box-shadow: 0 8px 16px #6852ba;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .timeline-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 25px #6852ba;
   }
 
   .timeline-box:nth-child(2n){

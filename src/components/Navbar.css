@@ -10,6 +10,18 @@
     
 }
 
+.theme-toggle-button {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .theme-toggle-button:focus {
+    outline: none;
+  }
+
 .nav-content{
     max-width: 1300px;
     display: flex;

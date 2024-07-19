@@ -140,7 +140,7 @@ button:focus {
 }
 
 
-.conc-container::after,
+/* .conc-container::after,
 .conc-container::before{
     content: " ";
     width: 25.125rem;
@@ -160,7 +160,7 @@ button:focus {
 .conc-container::before{
     bottom: 2rem;
     right: 0rem;
-}
+} */
 
 .section-heading1 {
     width: auto;

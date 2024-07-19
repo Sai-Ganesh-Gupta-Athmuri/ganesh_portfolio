@@ -11,7 +11,7 @@
 }
 
 
-.about-container::after,
+/* .about-container::after,
 .about-container::before{
     content: " ";
     width: 25.125rem;
@@ -31,7 +31,7 @@
 .about-container::before{
     bottom: 5rem;
     right: 0rem;
-}
+} */
 
 .about-header {
   margin-bottom: 2rem;

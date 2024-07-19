@@ -23,7 +23,7 @@
     width: 90vw;
 }
 
-.skills-container::after,
+/* .skills-container::after,
 .skills-container::before{
     content: " ";
     width: 23.125rem;
@@ -43,7 +43,7 @@
 .skills-container::before{
     bottom: 4rem;
     right: -2rem;
-}
+} */
 
 .skills-list-inner {
     width: 100%;

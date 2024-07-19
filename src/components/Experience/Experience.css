@@ -5,7 +5,7 @@
   }
 
 
-  .exp-container::after,
+  /* .exp-container::after,
   .exp-container::before{
       content: " ";
       width: 25.125rem;
@@ -25,7 +25,7 @@
   .exp-container::before{
       bottom: 2rem;
       right: 0rem;
-  }
+  } */
 
   .timeline-box{
     position:relative;
