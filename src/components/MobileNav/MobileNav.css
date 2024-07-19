@@ -23,6 +23,8 @@
 .mobile-menu.active{
     opacity: 1;
     transform: translateX(0);
+    height: 110vh;
+    width: 70vw;
 }
 
 
@@ -47,4 +49,12 @@
         display: block;
         background-color: #b09ef8;
     }
+}
+
+@media (max-width : 375px){
+    .mobile-menu{
+        display: block;
+        background-color: #b09ef8;
+    }
+
 }

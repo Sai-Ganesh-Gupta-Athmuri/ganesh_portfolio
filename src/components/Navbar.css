@@ -1,10 +1,13 @@
 .nav-wrapper{
+    height: 60px;
+    width: 100vw;
     background: rgba(0,0,0,0.1);
     padding: 0.5rem 0;
     position: sticky;
     top:0;
     z-index: 30;
     backdrop-filter: blur(50px);
+    
 }
 
 .nav-content{
@@ -14,12 +17,16 @@
     justify-content: space-between;
     padding: 1rem 0;
     margin: 0 auto;
+    height: 40px;
 }
 
-.logo{
-    width: 4rem;
-    height: auto;
-
+.p-nav{
+    font-family : 'Dancing Script';
+    font-size : 35px;
+    font-weight: 900;
+    background: linear-gradient(to right, #ff9a9e, #ff6f91, #ff4b5c, #ff758f);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .nav-content ul{
@@ -113,11 +120,20 @@
         width: 3rem;
         height: auto;
     }
+
+    .menu-btn{
+        display: block;
+    }
 }
 
 @media (max-width: 769px){
     .menu-btn{
         display: block;
+        margin-right: -1rem;
+    }
+
+    .nav-content{
+        margin-top: 0.5rem;
     }
     .nav-content ul{
         display: none;

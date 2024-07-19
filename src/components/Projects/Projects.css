@@ -1,0 +1,148 @@
+#project-container{
+    padding-top: 5rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    margin-left: 15%;
+    position: relative;
+}
+
+.heading{
+    margin-left: 30%;
+    margin-bottom: 2rem;
+}
+
+.heading span{
+    padding-left: 1rem;
+}
+
+.project-main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+}
+
+.project-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    border-radius: 2%;
+    border: 3px solid #6852ba;
+    padding: 3rem;
+    gap:3rem;
+    height: 60%;
+}
+
+
+.project-img img{
+    height: 10rem;
+    width: 20rem;
+    border-radius: 5%;
+    border: 3px solid #6852ba;
+    box-shadow: 0 8px 16px #6852ba;
+}
+
+
+.project-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+    height: 40%;
+}
+
+.project-description p{
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+    margin-right: 3rem;
+}
+
+
+.project-img{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.arrow-left,
+.arrow-right{
+    width: 3.3rem;
+    height: 3.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6751b9;
+    border-radius: 0.65rem;
+    border: 1.5px solid #6751b9;
+    position: absolute;
+    top: 47%;
+    z-index: 2;
+    cursor: pointer;
+    background: #130f2a;
+}
+
+.arrow-left span,
+.arrow-right span{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.arrow-left{
+    left: -1.5rem;
+}
+
+.arrow-right{
+    right: -1.5rem;
+}
+
+@media (max-width: 768px){
+    #project-container{
+        height: 100vh;
+        width: 85vw;
+        padding-top: 25rem;
+        margin-left: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .heading{
+        padding-top: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    .project-description{
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+    }
+
+    .project-description p{
+        margin-bottom: 1rem;
+        font-size: small;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    .arrow-left,
+    .arrow-right{
+        top: 89%;
+    }
+
+    .heading{
+        margin-left: 0rem;
+    }
+
+    .heading  span{
+        font-size: 21px;
+        padding-left: 0.2rem;
+    }
+
+    .project-img img{
+        height: 8rem;
+        width: 18rem;
+    }
+
+}

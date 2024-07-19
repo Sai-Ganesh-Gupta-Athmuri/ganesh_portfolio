@@ -10,21 +10,26 @@ const MobileNav = ({isOpen, toggleMenu}) => {
                 <img className='logo' src='./assets/images/pp_port.png' alt="" />
                 <ul>
                     <li>
-                        <a className='menu-item'>About</a>
+                        <a href ='#about-page' className='menu-item'>Home</a>
                     </li>
                     <li>
-                        <a className='menu-item'>Education</a>
+                        <a href ='#about-me' className='menu-item'>About</a>
                     </li>
                     <li>
-                        <a className='menu-item'>Skills</a>
+                        <a href='#education' className='menu-item'>Education</a>
                     </li>
                     <li>
-                        <a className='menu-item'>Projects</a>
+                        <a href='#heading3' className='menu-item'>Skills</a>
                     </li>
                     <li>
-                        <a className='menu-item'>Contact Me</a>
+                        <a href='#experience' className='menu-item'>Experience</a>
                     </li>
-                    <button className='contact-btn' onClick={() => {}}>Hire Me</button>
+                    <li>
+                        <a href='#heading' className='menu-item'>Projects</a>
+                    </li>
+                    <li>
+                        <a href='#heading1' className='menu-item'>Contact Me</a>
+                    </li>
                 </ul>
             </div>
         </div>

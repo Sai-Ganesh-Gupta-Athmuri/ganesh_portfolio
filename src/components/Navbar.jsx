@@ -13,26 +13,30 @@ const Navbar = () => {
         <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
         <nav className='nav-wrapper'>
             <div className='nav-content'>
-                <img className='logo' src='./assets/images/pp_port.png' alt="" />
+                <p className='p-nav'>Sai Ganesh's Portfolio</p>
                 <ul>
                     <li>
-                        <a className='menu-item'>About</a>
+                        <a href ='#about-page' className='menu-item'>Home</a>
                     </li>
                     <li>
-                        <a className='menu-item'>Education</a>
+                        <a href ='#about-me' className='menu-item'>About</a>
                     </li>
                     <li>
-                        <a className='menu-item'>Skills</a>
+                        <a href='#education' className='menu-item'>Education</a>
                     </li>
                     <li>
-                        <a className='menu-item'>Projects</a>
+                        <a href='#skills-content' className='menu-item'>Skills</a> 
                     </li>
                     <li>
-                        <a className='menu-item'>Contact Me</a>
+                        <a href='#experience' className='menu-item'>Experience</a>
                     </li>
-                    <button className='contact-btn' onClick={() => {}}>Hire Me</button>
+                    <li>
+                        <a href='#project-container' className='menu-item'>Projects</a>
+                    </li>
+                    <li>
+                        <a href='#contact' className='menu-item'>Contact Me</a>
+                    </li>
                 </ul>
-
                 <button class="menu-btn" onClick={toggleMenu}>
                     <span class={"material-symbols-outlined"} style={{fontSize: "1.8rem"}}>
                         {openMenu ? "close" : "menu"}

@@ -1,0 +1,135 @@
+.about-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+  transition: z-index 0.5s ease;
+}
+
+
+.about-container::after,
+.about-container::before{
+    content: " ";
+    width: 25.125rem;
+    height: 25.125rem;
+    border-radius: 25.125rem;
+    background: #7c66e3;
+    position: absolute;
+    z-index: -1;
+    filter: blur(250px);
+}
+
+.about-container::after{
+    top: 8rem;
+    left: -5rem;
+}
+
+.about-container::before{
+    bottom: 5rem;
+    right: 0rem;
+}
+
+.about-header {
+  margin-bottom: 2rem;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: 80%;
+  margin-bottom: 3rem;
+}
+
+.about-header h2 span{
+  padding-left: 5px;
+}
+
+.about-text {
+  margin-left: 5rem;
+  /* opacity: 0; */
+  /* transform: translateX(100%);
+  transition: transform 1s, opacity 1s; */
+}
+
+.about-image {
+  /* opacity: 0; */
+  /* transform: translateX(-100%);
+  transition: transform 1s, opacity 1s; */
+}
+
+.about-image img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgb(255, 255, 255);
+}
+
+@media (max-width: 768px) {
+  .about-container {
+      height: 120vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      position: relative;
+      z-index: 1;
+      transition: z-index 0.5s ease;
+      padding-top: 8rem;
+      
+  }
+
+  .content {
+      flex-direction: column;
+      gap: 3rem;
+  }
+
+  .about-image img {
+      height: 15rem;
+      width: 15rem;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgb(255, 255, 255);
+  }
+
+  .about-text {
+      margin-left: 0.5rem;
+  }
+
+  .about-text p {
+      font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 325px) {
+  .about-container {
+      height: 160vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      position: relative;
+      z-index: 1;
+      transition: z-index 0.5s ease;
+      margin-bottom: -6rem;
+  }
+
+  .about-text {
+      margin-left: 0.2rem;
+  }
+
+  .about-text p {
+      font-size: 0.6rem;
+  }
+}
+
+.visible {
+  opacity: 1;
+  transform: translateX(0);
+}

@@ -1,0 +1,121 @@
+.skills-list {
+    height: 8rem;
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #6852ba;
+    border-radius: 10%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+    box-shadow: 0 8px 10px #6852ba;
+}
+
+.skills-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    background-color: transparent;
+    height: 75vh;
+    width: 90vw;
+}
+
+.skills-container::after,
+.skills-container::before{
+    content: " ";
+    width: 23.125rem;
+    height: 20.125rem;
+    border-radius: 25.125rem;
+    background: #7c66e3;
+    position: absolute;
+    z-index: -1;
+    filter: blur(200px);
+}
+
+.skills-container::after{
+    top: 4rem;
+    left: -5rem;
+}
+
+.skills-container::before{
+    bottom: 4rem;
+    right: -2rem;
+}
+
+.skills-list-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#header {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+#header span{
+    padding-left: 0.3rem;
+}
+
+.skills-list:hover {
+    transform: rotateY(180deg);
+    transition: all 0.8s ease;
+}
+
+.skills-list-front, .skills-list-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20%;
+}
+
+.skills-list-front {
+    color: black;
+}
+
+.skills-list-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+@media (max-width: 768px) {
+
+    .skills-container{
+        height: 90vh;
+    }
+
+    .skills-list{
+        height: 4rem;
+        width: 6rem;
+    }
+
+    .skills-list-inner img{
+        height: 2rem;
+        width: 2rem;
+    }
+
+
+    #heading3{
+        padding-top: 18rem;
+    }
+}
